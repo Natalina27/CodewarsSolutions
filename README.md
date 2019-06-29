@@ -1,1 +1,1 @@
-Codewars solutions from js-road-map 
+Codewars solutions from js-road-map

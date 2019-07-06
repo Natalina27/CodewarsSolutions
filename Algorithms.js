@@ -1,4 +1,4 @@
-//1. Vsya-Clerk
+//1. Vsya-Clerk *** (3 hours with hint)
 https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8
 
 ```

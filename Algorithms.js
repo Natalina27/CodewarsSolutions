@@ -3,7 +3,7 @@ https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8
 
 ```
 function tickets(peopleInLine){
-
+// portfolio[25 $, 50$]
     let arr = [0, 0];
   for (var i = 0; i < peopleInLine.length; i++) {
     switch (peopleInLine[i]) {

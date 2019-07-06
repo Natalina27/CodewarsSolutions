@@ -1,4 +1,4 @@
-//1. Vsya-Clerk *** (3 hours with hint)
+//1. Vsya-Clerk *** (3 hours with hint) 6level
 ````
 https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8
 

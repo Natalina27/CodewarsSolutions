@@ -25,3 +25,27 @@ function tickets(peopleInLine){
   return 'YES';
 }
 ```
+//2. Valid Parentheses 5 level
+````
+https://www.codewars.com/kata/52774a314c2333f0a7000688
+
+```
+function validParentheses(parens){
+   let arr = [];
+  for(let i = 0; i < parens.length; i++) {
+    if(parens[i] === ")") {
+      if(arr.length <= 0) {
+        return false;
+      } else {
+        arr.shift();
+      }
+    }
+    if(parens[i] === "(") {
+      arr.push(")")
+    }
+  }
+
+  return arr.length ? false : true;
+}
+
+```

@@ -49,7 +49,7 @@ function validParentheses(parens){
 }
 
 ```
-//3. Sum Strings as Numbers
+//3. Sum Strings as Numbers 4 level
 ````
 https://www.codewars.com/kata/5324945e2ece5e1f32000370
 ```
@@ -74,7 +74,7 @@ function sumStrings(a, b) {
     return num.split("").reverse().join("").replace(/\b0+/g, '');
 }
 ```
-//4. Simple Fun #352: Reagent Formula
+//4. Simple Fun #352: Reagent Formula 8 level
 ````
 https://www.codewars.com/kata/simple-fun-number-352-reagent-formula/javascript
 ````
@@ -87,4 +87,31 @@ function isValid(formula){
   return firstRule && secondRule && thirdRule && fourthRule;
 
 }
+````
+//5. Bingo Card 6 level
+````
+https://www.codewars.com/kata/bingo-card/javascript
+```
+unction genRange(array, letter, start, end, count) {
+  let arr = [];
+  for(let i = 0; i < count; ) {
+    r = Math.floor(Math.random() * (end - start) + start);
+    if(arr.indexOf(r) == -1) {
+      arr.push(r);
+      array.push(letter + r);
+      i++;
+    }
+  }
+}
+function getCard()
+{
+  let arr = [];
+  genRange(arr, "B", 1, 15, 5);
+  genRange(arr, "I", 16, 30, 5);
+  genRange(arr, "N", 31, 45, 4);
+  genRange(arr, "G", 46, 60, 5);
+  genRange(arr, "O", 61, 75, 5);
+  return arr;
+}
+
 ````

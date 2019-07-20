@@ -92,7 +92,7 @@ function isValid(formula){
 ````
 https://www.codewars.com/kata/bingo-card/javascript
 ```
-unction genRange(array, letter, start, end, count) {
+function genRange(array, letter, start, end, count) {
   let arr = [];
   for(let i = 0; i < count; ) {
     r = Math.floor(Math.random() * (end - start) + start);
@@ -115,3 +115,18 @@ function getCard()
 }
 
 ````
+//6. Integer to English
+
+//7.Check three and two
+````
+https://www.codewars.com/kata/check-three-and-two/javascript
+````
+function checkThreeAndTwo(array) {
+  let a = array.filter(x =>x === 'a').length;
+  let b = array.filter(x =>x === 'b').length;
+  let c = array.filter(x =>x === 'c').length;
+  return (a === 3 || b === 3 || c=== 3)
+          && (a === 2 || b === 2 || c === 2);
+}
+
+```````

@@ -115,9 +115,9 @@ function getCard()
 }
 
 ````
-//6. Integer to English
+//6. Integer to English 5 level
 
-//7.Check three and two
+//7.Check three and two 7 level
 ````
 https://www.codewars.com/kata/check-three-and-two/javascript
 ````
@@ -130,3 +130,20 @@ function checkThreeAndTwo(array) {
 }
 
 ```````
+//8. The Supermarket Queue 6 level
+`````
+https://www.codewars.com/kata/the-supermarket-queue/javascript
+````
+function queueTime(line, registers) {
+  let queArr = [];
+  for(let i = 0; i < registers; i++) {
+    queArr.push(0);
+  }
+  for(let i = 0; i < line.length; i++) {
+    queArr[0] += line[i];
+     queArr.sort(function(a,b) {return a-b});
+  }
+
+  return queArr[queArr.length-1];
+}
+

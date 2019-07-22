@@ -147,3 +147,24 @@ function queueTime(line, registers) {
   return queArr[queArr.length-1];
 }
 
+//9. Simple parenthesis removal
+````
+https://www.codewars.com/kata/simple-parenthesis-removal/javascript
+````
+
+function solve(s) {
+ let g = [], l = 1, a = '';
+ for (let c of s) {
+   switch (c) {
+     case '(': g.push(l); l = 1; break;
+     case ')': g.pop(); l = 1; break;
+     case '-': l = -1; break;
+     case '+': l = 1; break;
+     default: a += (g.reduce((a, v) => a * v, 1) * l == 1 ? '+' : '-') + c;
+   }
+ }
+ return a[0] == '+' ? a.slice(1) : a;
+}
+
+````
+//

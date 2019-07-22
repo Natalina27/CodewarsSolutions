@@ -1,4 +1,4 @@
-//1. Vsya-Clerk *** (3 hours with hint) 6level
+//1. Vasya-Clerk *** (3 hours with hint) 6level
 ````
 https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8
 
@@ -28,9 +28,23 @@ function tickets(peopleInLine){
 //2. Valid Parentheses 5 level
 ````
 https://www.codewars.com/kata/52774a314c2333f0a7000688
+`````
+// My solution n2:
+
+function validParentheses(parens){
+console.log(parens);
+    let counter = 0;
+  for( let i = 0; i < parens.length; i++){
+         if(parens[i] ==='(') { counter++ ;}
+         else if (parens[i] === ')') {counter-- ;} 
+     if (counter < 0 ) return false;
+  }
+   return counter === 0;
+  }
+
 
 ```
-//My solution:
+//My solution n1:
 
 function validParentheses(parens){
    if( parens [0] === ')' || parens [parens.length-1] === '(' ) return false;

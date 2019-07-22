@@ -30,6 +30,21 @@ function tickets(peopleInLine){
 https://www.codewars.com/kata/52774a314c2333f0a7000688
 
 ```
+//My solution:
+
+function validParentheses(parens){
+   if( parens [0] === ')' || parens [parens.length-1] === '(' ) return false;
+    let roundBracketsOpen = 0;
+    let roundBracketsClosed = 0;
+   for( let i = 0; i < parens.length; i++){
+         switch(parens[i]){
+   case ('(') : roundBracketsOpen ++ ; break;
+   case (')') : roundBracketsClosed++ ; break;
+    }
+  }
+ return roundBracketsOpen === roundBracketsClosed;
+  }
+````
 function validParentheses(parens){
    let arr = [];
   for(let i = 0; i < parens.length; i++) {

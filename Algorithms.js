@@ -146,6 +146,8 @@ function getCard()
 ````
 //6. Integer to English 5 level
 
+// Need to be solved
+
 //7.Check three and two 7 level
 ````
 https://www.codewars.com/kata/check-three-and-two/javascript
@@ -197,8 +199,10 @@ function solve(s) {
 
 ````
 //10.Smallest Difference 6 level
-````
+
+``````
 https://www.codewars.com/kata/smallest-difference/javascript
+
 ``````
 //My solution:
 

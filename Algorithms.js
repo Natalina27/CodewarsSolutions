@@ -182,4 +182,33 @@ function solve(s) {
 }
 
 ````
-//
+//10.Smallest Difference 6 level
+````
+https://www.codewars.com/kata/smallest-difference/javascript
+``````
+//My solution:
+
+function smallestDiff(arr1, arr2) {
+console.log(arr1,arr2);
+
+  if ( arr1.length === 0 && arr2.length === 0) {return -1;}
+
+  if ( arr1.length === 0 || arr2.length === 0) {
+    if (arr1.length !== 0){
+      return Math.min(...arr1);
+    }else{
+      return Math.min(...arr2);
+    }
+  }
+
+  let arrayOfDiff = [];
+
+  for(let i = 0; i < arr1.length; i++){
+    for(let j = 0; j< arr2.length; j++){
+    arrayOfDiff.push(Math.abs(arr1[i] - arr2[j]));
+
+    }
+  }
+   result = Math.min(...arrayOfDiff);
+  return result;
+  }

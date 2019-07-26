@@ -20,5 +20,15 @@ https://www.codewars.com/kata/5768a693a3205e1cc100071f
 ````
 //My solution:
 
+function initializeNames(name){
+nameArr=name.split(' ');
+if(nameArr<3){return name;}
+for (i=1;i<nameArr.length-1;i++){
+nameArr[i]= nameArr[i][0]+'.';
+}
+return nameArr.join(' ');
+}
+````
+
 
 

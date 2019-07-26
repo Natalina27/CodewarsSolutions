@@ -14,7 +14,7 @@ https://www.codewars.com/kata/calculate-average/javascript
 
 const find_average = array => array.reduce((x,y)=>x+y)/array.length;
 ````
-//Initialize my name 7level
+//3.Initialize my name 7level
 ````
 https://www.codewars.com/kata/5768a693a3205e1cc100071f
 ````

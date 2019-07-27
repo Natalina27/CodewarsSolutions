@@ -45,6 +45,15 @@ function arraySum(arr) {
   return  arr.reduce((a, b) => a + (typeof(b) == "number" ? b : (typeof(b) == "object" ? arraySum(b) : 0)), 0);
 }
 
+//6. Man in the west 8 level
+````
+https://www.codewars.com/kata/59bd5dc270a3b7350c00008b
+````
+//My solution:
+
+function checkTheBucket(bucket){
+return bucket.includes('gold');
+}
 
 
 

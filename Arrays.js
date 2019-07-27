@@ -31,7 +31,22 @@ return nameArr.join(' ');
 ````
 https://www.codewars.com/kata/57cc975ed542d3148f00015b
 ````
+//My solution:
+
 const check = (a,x) => a.includes(x);
+
+//5.Sum ALL the arrays! 7 level
+````
+https://www.codewars.com/kata/sum-all-the-arrays/javascript
+````
+//My solution:
+
+function arraySum(arr) {
+  return  arr.reduce((a, b) => a + (typeof(b) == "number" ? b : (typeof(b) == "object" ? arraySum(b) : 0)), 0);
+}
+
+
+
 
 
 

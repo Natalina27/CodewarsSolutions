@@ -55,7 +55,7 @@ function checkTheBucket(bucket){
 return bucket.includes('gold');
 }
 
-//7. Kata Example Twist
+//7. Kata Example Twist 8 level
 ````
 https://www.codewars.com/kata/525c1a07bb6dda6944000031
 ````
@@ -63,6 +63,12 @@ https://www.codewars.com/kata/525c1a07bb6dda6944000031
 //My solution:
 let websites = new Array(1000).fill("codewars");
 
+//8. Invert values 8 leverl
+````
+https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad
+
+````
+const invert = array => array.map(a => (a) ? a * -1 : a );
 
 
 

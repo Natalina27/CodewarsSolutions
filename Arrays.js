@@ -68,7 +68,18 @@ let websites = new Array(1000).fill("codewars");
 https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad
 
 ````
+//My solution:
+
 const invert = array => array.map(a => (a) ? a * -1 : a );
+
+//9. Remove duplicates from list
+````
+https://www.codewars.com/kata/57a5b0dfcf1fa526bb000118
+````
+// My solution:
+
+const distinct = a => [...new Set (a)];
+
 
 
 

@@ -80,6 +80,13 @@ https://www.codewars.com/kata/57a5b0dfcf1fa526bb000118
 
 const distinct = a => [...new Set (a)];
 
+//10.Write shortest function to calculate Average number of Array 7 level
+````
+https://www.codewars.com/kata/56c22cdbe0c0f7cae2001789
+````
+//My solution:
+
+const avg = (a) => a.reduce((x, y) => x + y) / a.length
 
 
 

@@ -88,6 +88,21 @@ https://www.codewars.com/kata/56c22cdbe0c0f7cae2001789
 
 const avg = (a) => a.reduce((x, y) => x + y) / a.length
 
+//11.Sort the odd 6 level
+````
+https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
+````
+let sortArray = function(arr) {
+  let idx = arr.map((a, i) => a%2===1 ? i : '').filter(a => a !== '');
+  let odds = arr.filter(a => a % 2 === 1).sort((a,b) => a - b);
+  for(let i = 0; i < idx.length; i+=1) {
+    arr[idx[i]] = odds[i];
+  }
+  return arr;
+}
+
+
+
 
 
 

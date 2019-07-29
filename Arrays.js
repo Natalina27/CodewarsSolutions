@@ -101,6 +101,15 @@ let sortArray = function(arr) {
   return arr;
 }
 
+//12. Array Array Array 7 level
+````
+https://www.codewars.com/kata/array-array-array/javascript
+````
+//My solution:
+let explode = x => {
+  let n = x.filter(a => !isNaN(a)).reduce((b, n) => b + n, 0);
+  return n ? Array(n).fill(x) : 'Void!';
+}
 
 
 

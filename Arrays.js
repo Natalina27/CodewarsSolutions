@@ -111,6 +111,27 @@ let explode = x => {
   return n ? Array(n).fill(x) : 'Void!';
 }
 
+//13.Create Four Letter Birding Codes from Bird Names 6 level
+````
+https://www.codewars.com/kata/create-four-letter-birding-codes-from-bird-names/javascript
+````
+//My solution:
+
+function birdCode(arr){
+let fourLetterCode = [];
+let subArray = [];
+
+for (let i = 0; i < arr.length; i++){
+subArray = arr[i].replace(/-/g,' ').toUpperCase().split(' '); // .split(/[ -]/);
+switch(subArray.length){
+  case 1 :  fourLetterCode.push(subArray[0].slice(0,4)); break;
+  case 2 :  fourLetterCode.push(subArray[0].slice(0,2) + subArray[1].slice(0,2)); break;
+  case 3 :  fourLetterCode.push(subArray[0][0] + subArray[1][0] +subArray[2].slice(0,2)); break;
+  default:  fourLetterCode.push(subArray[0][0] + subArray[1][0] + subArray[2][0] + subArray[3][0]);
+  }
+}
+return fourLetterCode;
+}
 
 
 

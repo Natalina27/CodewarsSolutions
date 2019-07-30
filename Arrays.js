@@ -133,6 +133,14 @@ switch(subArray.length){
 return fourLetterCode;
 }
 
+//14.String Reordering 7 level
+````
+https://www.codewars.com/kata/string-reordering/javascript
+````
+//My solution:
+function sentence(a) {
+  return a.sort((a,b)=>Object.keys(a)-Object.keys(b)).map(x=>x[+Object.keys(x)]).join` `;
+}
 
 
 

@@ -155,6 +155,10 @@ function arraysSimilar(arr1, arr2) {
 
 function sortFunc(a,b) {return a-b;}
 
+//My solution 2:
+function arraysSimilar(arr1, arr2) {
+return JSON.stringify(arr1.sort())===JSON.stringify(arr2.sort());
+}
 
 
 

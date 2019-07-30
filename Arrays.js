@@ -142,6 +142,19 @@ function sentence(a) {
   return a.sort((a,b)=>Object.keys(a)-Object.keys(b)).map(x=>x[+Object.keys(x)]).join` `;
 }
 
+//15.Arrays Similar 6level
+````
+https://www.codewars.com/kata/51e704f2d8dbace389000279
+````
+//My solution 1:
+function arraysSimilar(arr1, arr2) {
+  arr1 = arr1.sort(sortFunc);
+  arr2 = arr2.sort(sortFunc);
+  return arr1.length == arr2.length && arr1.every(function(a,i) {return a === arr2[i];});
+}
+
+function sortFunc(a,b) {return a-b;}
+
 
 
 

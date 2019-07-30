@@ -160,6 +160,24 @@ function arraysSimilar(arr1, arr2) {
 return JSON.stringify(arr1.sort())===JSON.stringify(arr2.sort());
 }
 
+//16. A gift well spent 7level
+````
+https://www.codewars.com/kata/54554846126a002d5b000854
+````
+//My solution:
+let buy = function(x, arr){
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i+1; j < arr.length; j++) {
+      if (arr[i]+arr[j] === x) {
+        return [i ,j];
+      }
+    }
+  }
+
+  return null;
+};
+
+
 
 
 

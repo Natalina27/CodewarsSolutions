@@ -188,6 +188,16 @@ function maxTriSum(numbers){
   return set[0] + set[1] + set[2];
 }
 
+//18. Where my anagrams at? 5level
+````
+https://www.codewars.com/kata/where-my-anagrams-at/javascript
+````
+//My solution:
+
+function anagrams(word, words) {
+  word = word.split('').sort().join('');
+  return words.filter(function(v) {return word == v.split('').sort().join('');});
+}
 
 
 

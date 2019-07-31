@@ -177,7 +177,16 @@ let buy = function(x, arr){
   return null;
 };
 
-
+//17. Maximum Triplet Sum (Array Series #7) 7level
+````
+https://www.codewars.com/kata/5aa1bcda373c2eb596000112
+````
+//My solution:
+function maxTriSum(numbers){
+ let set = new Set(numbers);
+  set = [...set].sort((a, b) => b - a);
+  return set[0] + set[1] + set[2];
+}
 
 
 

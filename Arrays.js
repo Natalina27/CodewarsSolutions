@@ -199,6 +199,17 @@ function anagrams(word, words) {
   return words.filter(function(v) {return word == v.split('').sort().join('');});
 }
 
+//19.Abbreviate a Two Word Name 8level
+````
+https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3
+````
+//My solution:
+function abbrevName(name){
+return name[0].toUpperCase()+'.'+ name.charAt(name.indexOf(' ')+1).toUpperCase();
+}
+
+
+
 
 
 

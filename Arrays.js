@@ -217,6 +217,16 @@ function findNeedle(haystack) {
   return "found the needle at position "+haystack.indexOf('needle');
 }
 
+//21.Sort and star 8level
+````
+https://www.codewars.com/kata/sort-and-star/javascript
+````
+//My solution:
+
+function twoSort(s) {
+  return s.sort()[0].split('').join('***');
+}
+
 
 
 

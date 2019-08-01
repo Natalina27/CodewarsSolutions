@@ -1,7 +1,4 @@
-//1. Vasya-Clerk *** (3 hours with hint) 6level
-````
-https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8
-
+*[x][1. Vasya-Clerk 6level](https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8)
 ```
 function tickets(peopleInLine){
 // portfolio[25 $, 50$]

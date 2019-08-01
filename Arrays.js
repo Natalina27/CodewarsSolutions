@@ -208,6 +208,15 @@ function abbrevName(name){
 return name[0].toUpperCase()+'.'+ name.charAt(name.indexOf(' ')+1).toUpperCase();
 }
 
+//20. A needle in the Haystack 8level
+````
+https://www.codewars.com/kata/a-needle-in-the-haystack/javascript
+````
+//My solution:
+function findNeedle(haystack) {
+  return "found the needle at position "+haystack.indexOf('needle');
+}
+
 
 
 

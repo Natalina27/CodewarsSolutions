@@ -1,23 +1,29 @@
+## Arrays methods
+
 //1. Reverse List Order 8 level
 * https://www.codewars.com/kata/53da6d8d112bd1a0dc00008b
 
 ```javascript
+```
+* https://www.codewars.com/kata/53da6d8d112bd1a0dc00008b
+```javascript
 const reverseList = list =>  list.reverse();
 ```
 
+
+```
 //2. Calculate average 8 level
-````
-https://www.codewars.com/kata/calculate-average/javascript
-````
-//My solution:
+```
+* https://www.codewars.com/kata/calculate-average/javascript
+
+```javascript
 
 const find_average = array => array.reduce((x,y)=>x+y)/array.length;
 ````
 //3.Initialize my name 7level
-````
-https://www.codewars.com/kata/5768a693a3205e1cc100071f
-````
-//My solution:
+```
+* https://www.codewars.com/kata/5768a693a3205e1cc100071f
+```javascript
 
 function initializeNames(name){
 nameArr=name.split(' ');
@@ -27,69 +33,61 @@ nameArr[i]= nameArr[i][0]+'.';
 }
 return nameArr.join(' ');
 }
-````
-https://www.codewars.com/kata/57cc975ed542d3148f00015b
-````
-//My solution:
+```
+
+//4. You only need one- Begginer
+
+* https://www.codewars.com/kata/57cc975ed542d3148f00015b
+```javascript
 
 const check = (a,x) => a.includes(x);
-
+```
 //5.Sum ALL the arrays! 7 level
-````
-https://www.codewars.com/kata/sum-all-the-arrays/javascript
-````
-//My solution:
+
+* https://www.codewars.com/kata/sum-all-the-arrays/javascript
+```javascript
 
 function arraySum(arr) {
   return  arr.reduce((a, b) => a + (typeof(b) == "number" ? b : (typeof(b) == "object" ? arraySum(b) : 0)), 0);
 }
-
+```
 //6. Man in the west 8 level
-````
-https://www.codewars.com/kata/59bd5dc270a3b7350c00008b
-````
-//My solution:
+
+* https://www.codewars.com/kata/59bd5dc270a3b7350c00008b
+```javascript
 
 function checkTheBucket(bucket){
 return bucket.includes('gold');
 }
-
+```
 //7. Kata Example Twist 8 level
-````
-https://www.codewars.com/kata/525c1a07bb6dda6944000031
-````
-
-//My solution:
+* https://www.codewars.com/kata/525c1a07bb6dda6944000031
+```javascript
 let websites = new Array(1000).fill("codewars");
+```
 
 //8. Invert values 8 leverl
-````
-https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad
+* https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad
 
-````
-//My solution:
+```javascript
 
 const invert = array => array.map(a => (a) ? a * -1 : a );
-
+```
 //9. Remove duplicates from list
-````
-https://www.codewars.com/kata/57a5b0dfcf1fa526bb000118
-````
-// My solution:
+* https://www.codewars.com/kata/57a5b0dfcf1fa526bb000118
+```javascript
 
 const distinct = a => [...new Set (a)];
-
+```
 //10.Write shortest function to calculate Average number of Array 7 level
-````
-https://www.codewars.com/kata/56c22cdbe0c0f7cae2001789
-````
-//My solution:
-
+* https://www.codewars.com/kata/56c22cdbe0c0f7cae2001789
+```javascript
 const avg = (a) => a.reduce((x, y) => x + y) / a.length
+```
 
 //11.Sort the odd 6 level
 ````
-https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
+* https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
 ````
 let sortArray = function(arr) {
   let idx = arr.map((a, i) => a%2===1 ? i : '').filter(a => a !== '');
@@ -102,7 +100,7 @@ let sortArray = function(arr) {
 
 //12. Array Array Array 7 level
 ````
-https://www.codewars.com/kata/array-array-array/javascript
+* https://www.codewars.com/kata/array-array-array/javascript
 ````
 //My solution:
 let explode = x => {
@@ -112,7 +110,7 @@ let explode = x => {
 
 //13.Create Four Letter Birding Codes from Bird Names 6 level
 ````
-https://www.codewars.com/kata/create-four-letter-birding-codes-from-bird-names/javascript
+* https://www.codewars.com/kata/create-four-letter-birding-codes-from-bird-names/javascript
 ````
 //My solution:
 
@@ -134,7 +132,7 @@ return fourLetterCode;
 
 //14.String Reordering 7 level
 ````
-https://www.codewars.com/kata/string-reordering/javascript
+* https://www.codewars.com/kata/string-reordering/javascript
 ````
 //My solution:
 function sentence(a) {
@@ -143,7 +141,7 @@ function sentence(a) {
 
 //15.Arrays Similar 6level
 ````
-https://www.codewars.com/kata/51e704f2d8dbace389000279
+* https://www.codewars.com/kata/51e704f2d8dbace389000279
 ````
 //My solution 1:
 function arraysSimilar(arr1, arr2) {
@@ -161,7 +159,7 @@ return JSON.stringify(arr1.sort())===JSON.stringify(arr2.sort());
 
 //16. A gift well spent 7level
 ````
-https://www.codewars.com/kata/54554846126a002d5b000854
+* https://www.codewars.com/kata/54554846126a002d5b000854
 ````
 //My solution:
 let buy = function(x, arr){
@@ -178,7 +176,7 @@ let buy = function(x, arr){
 
 //17. Maximum Triplet Sum (Array Series #7) 7level
 ````
-https://www.codewars.com/kata/5aa1bcda373c2eb596000112
+* https://www.codewars.com/kata/5aa1bcda373c2eb596000112
 ````
 //My solution:
 function maxTriSum(numbers){
@@ -189,7 +187,7 @@ function maxTriSum(numbers){
 
 //18. Where my anagrams at? 5level
 ````
-https://www.codewars.com/kata/where-my-anagrams-at/javascript
+* https://www.codewars.com/kata/where-my-anagrams-at/javascript
 ````
 //My solution:
 
@@ -200,7 +198,7 @@ function anagrams(word, words) {
 
 //19.Abbreviate a Two Word Name 8level
 ````
-https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3
+* https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3
 ````
 //My solution:
 function abbrevName(name){
@@ -209,7 +207,7 @@ return name[0].toUpperCase()+'.'+ name.charAt(name.indexOf(' ')+1).toUpperCase()
 
 //20. A needle in the Haystack 8level
 ````
-https://www.codewars.com/kata/a-needle-in-the-haystack/javascript
+* https://www.codewars.com/kata/a-needle-in-the-haystack/javascript
 ````
 //My solution:
 function findNeedle(haystack) {
@@ -218,13 +216,34 @@ function findNeedle(haystack) {
 
 //21.Sort and star 8level
 ````
-https://www.codewars.com/kata/sort-and-star/javascript
+* https://www.codewars.com/kata/sort-and-star/javascript
 ````
 //My solution:
 
 function twoSort(s) {
   return s.sort()[0].split('').join('***');
 }
+
+//22. Are the numbers in order? 7 level
+* https://www.codewars.com/kata/are-the-numbers-in-order/javascript
+
+```javascript
+function inAscOrder(arr) {
+  return arr.every((elem,i) => i===0 || arr[i] > arr[i-1]);
+
+}
+
+```
+//23. Find the missing element between two arrays 7level
+* https://www.codewars.com/kata/5a5915b8d39ec5aa18000030
+
+```javascript
+function findMissing(arr1, arr2) {
+
+return (arr1.reduce((a,b)=>a+b,0)) - (arr2.reduce((a, b)=>a + b,0));
+
+}
+```
 
 
 

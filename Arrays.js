@@ -4,16 +4,10 @@
 * https://www.codewars.com/kata/53da6d8d112bd1a0dc00008b
 
 ```javascript
-```
-* https://www.codewars.com/kata/53da6d8d112bd1a0dc00008b
-```javascript
+
 const reverseList = list =>  list.reverse();
 ```
-
-
-```
 //2. Calculate average 8 level
-```
 * https://www.codewars.com/kata/calculate-average/javascript
 
 ```javascript
@@ -21,7 +15,6 @@ const reverseList = list =>  list.reverse();
 const find_average = array => array.reduce((x,y)=>x+y)/array.length;
 ````
 //3.Initialize my name 7level
-```
 * https://www.codewars.com/kata/5768a693a3205e1cc100071f
 ```javascript
 
@@ -36,14 +29,12 @@ return nameArr.join(' ');
 ```
 
 //4. You only need one- Begginer
-
 * https://www.codewars.com/kata/57cc975ed542d3148f00015b
 ```javascript
 
 const check = (a,x) => a.includes(x);
 ```
 //5.Sum ALL the arrays! 7 level
-
 * https://www.codewars.com/kata/sum-all-the-arrays/javascript
 ```javascript
 
@@ -52,7 +43,6 @@ function arraySum(arr) {
 }
 ```
 //6. Man in the west 8 level
-
 * https://www.codewars.com/kata/59bd5dc270a3b7350c00008b
 ```javascript
 
@@ -62,7 +52,9 @@ return bucket.includes('gold');
 ```
 //7. Kata Example Twist 8 level
 * https://www.codewars.com/kata/525c1a07bb6dda6944000031
+
 ```javascript
+
 let websites = new Array(1000).fill("codewars");
 ```
 
@@ -81,7 +73,9 @@ const distinct = a => [...new Set (a)];
 ```
 //10.Write shortest function to calculate Average number of Array 7 level
 * https://www.codewars.com/kata/56c22cdbe0c0f7cae2001789
+
 ```javascript
+
 const avg = (a) => a.reduce((x, y) => x + y) / a.length
 ```
 

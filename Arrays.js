@@ -238,7 +238,7 @@ return (arr1.reduce((a,b)=>a+b,0)) - (arr2.reduce((a, b)=>a + b,0));
 
 }
 ```
-//24. Get the mean of the array
+//24. Get the mean of the array 8level
 * https://www.codewars.com/kata/563e320cee5dddcf77000158
 ```
 function getAverage(marks){
@@ -249,6 +249,7 @@ function getAverage(marks){
 ```
 const getAverage =(marks) => Math.floor(marks.reduce((sum, x) => sum + x) / marks.length);
 ```
+
 
 
 

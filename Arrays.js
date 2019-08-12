@@ -238,6 +238,15 @@ return (arr1.reduce((a,b)=>a+b,0)) - (arr2.reduce((a, b)=>a + b,0));
 
 }
 ```
+//24. Get the mean of the array
+* https://www.codewars.com/kata/563e320cee5dddcf77000158
+```
+function getAverage(marks){
+  let acc=0;
+  marks.forEach(el=>acc+=el);
+  return Math.floor(acc/marks.length);
+}
+```
 
 
 

@@ -147,7 +147,7 @@ function getCard()
 
 * https://www.codewars.com/kata/integer-to-english/javascript
 
-````javascript
+```javascript
 function intToEnglish(num){
        return[
        ['quadrillion', 1e15],
@@ -209,7 +209,7 @@ function checkThreeAndTwo(array) {
 //8. The Supermarket Queue 6 level
 * https://www.codewars.com/kata/the-supermarket-queue/javascript
 
-```javascript
+````javascript
 function queueTime(line, registers) {
   let queArr = [];
   for(let i = 0; i < registers; i++) {

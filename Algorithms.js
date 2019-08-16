@@ -145,7 +145,54 @@ function getCard()
 ```
 //6. Integer to English 5 level
 
-// Need to be solved
+* https://www.codewars.com/kata/integer-to-english/javascript
+
+````javascript
+function intToEnglish(num){
+       return[
+       ['quadrillion', 1e15],
+       ['trillion', 1e12],
+       ['billion', 1e9],
+       ['million', 1e6],
+       ['thousand', 1e3],
+       ['hundred', 1e2],
+       ['ninety', 90],
+       ['eighty', 80],
+       ['seventy', 70],
+       ['sixty', 60],
+       ['fifty', 50],
+       ['forty', 40],
+       ['thirty', 30],
+       ['twenty', 20],
+       ['nineteen', 19],
+       ['eigtheen', 18],
+       ['seventeen', 17],
+       ['sixteen', 16],
+       ['fifteen', 15],
+       ['fourteen', 14],
+       ['thirteen', 13],
+       ['twelve', 12],
+       ['eleven', 11],
+       ['ten', 10],
+       ['nine', 9],
+       ['eight', 8],
+       ['seven', 7],
+       ['six', 6],
+       ['five', 5],
+       ['four', 4],
+       ['three', 3],
+       ['two', 2],
+       ['one', 1]
+    ]
+  .reduce((str, [name, value]) => {
+    let mult = Math.floor(num/value);
+    if(!mult) return str;
+    num %= value;
+    return str + (value >= 100 ?  intToEnglish(mult) + ' ' : '') + name + (num ? ' ' : '');
+
+  }, '');
+}
+````
 
 //7.Check three and two 7 level
 * https://www.codewars.com/kata/check-three-and-two/javascript

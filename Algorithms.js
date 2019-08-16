@@ -1,6 +1,8 @@
 //1. Vasya-Clerk 6level
 * https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8
-```javascript
+
+````javascript
+
 function tickets(peopleInLine){
 // portfolio[25 $, 50$]
     let arr = [0, 0];
@@ -23,6 +25,7 @@ function tickets(peopleInLine){
   return 'YES';
 }
 ```
+
 //2. Valid Parentheses 5 level
 * https://www.codewars.com/kata/52774a314c2333f0a7000688
 ```javascript
@@ -55,7 +58,7 @@ function validParentheses(parens){
  return roundBracketsOpen === roundBracketsClosed;
   }
 
-```javascript
+````javascript
 function validParentheses(parens){
    let arr = [];
   for(let i = 0; i < parens.length; i++) {
@@ -176,7 +179,7 @@ function queueTime(line, registers) {
 //9. Simple parenthesis removal
 * https://www.codewars.com/kata/simple-parenthesis-removal/javascript
 
-```javascript
+````javascript
 function solve(s) {
  let g = [], l = 1, a = '';
  for (let c of s) {

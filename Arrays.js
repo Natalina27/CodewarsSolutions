@@ -3,7 +3,7 @@
 //1. Reverse List Order 8 level
 * https://www.codewars.com/kata/53da6d8d112bd1a0dc00008b
 
-```javascript
+````javascript
 
 const reverseList = list =>  list.reverse();
 ```
@@ -239,13 +239,12 @@ return (arr1.reduce((a,b)=>a+b,0)) - (arr2.reduce((a, b)=>a + b,0));
 ```
 //24. Get the mean of the array 8level
 * https://www.codewars.com/kata/563e320cee5dddcf77000158
-```
+```javascript
 function getAverage(marks){
   let acc=0;
   marks.forEach(el=>acc+=el);
   return Math.floor(acc/marks.length);
 }
-```
 const getAverage =(marks) => Math.floor(marks.reduce((sum, x) => sum + x) / marks.length);
 ```
 

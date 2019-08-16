@@ -1,6 +1,6 @@
 //1. Vasya-Clerk 6level
 * https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8
-```
+```javascript
 function tickets(peopleInLine){
 // portfolio[25 $, 50$]
     let arr = [0, 0];
@@ -24,10 +24,8 @@ function tickets(peopleInLine){
 }
 ```
 //2. Valid Parentheses 5 level
-````
 * https://www.codewars.com/kata/52774a314c2333f0a7000688
-`````
-// My solution n2:
+```javascript
 
 function validParentheses(parens){
 console.log(parens);
@@ -43,7 +41,7 @@ console.log(parens);
 
 ```
 //My solution n1:
-
+```javascript
 function validParentheses(parens){
    if( parens [0] === ')' || parens [parens.length-1] === '(' ) return false;
     let roundBracketsOpen = 0;
@@ -56,7 +54,8 @@ function validParentheses(parens){
   }
  return roundBracketsOpen === roundBracketsClosed;
   }
-````
+
+```javascript
 function validParentheses(parens){
    let arr = [];
   for(let i = 0; i < parens.length; i++) {
@@ -78,7 +77,8 @@ function validParentheses(parens){
 ```
 //3. Sum Strings as Numbers 4 level
 * https://www.codewars.com/kata/5324945e2ece5e1f32000370
-```
+
+```javascript
 function sumStrings(a, b) {
     var arrA = a.split("").reverse().map( a => parseInt(a)), arrB = b.split("").reverse().map( b => parseInt(b));
     var maxLength = Math.max(a.length, b.length), carry = 0, num = "";
@@ -102,7 +102,8 @@ function sumStrings(a, b) {
 ```
 //4. Simple Fun #352: Reagent Formula 8 level
 * https://www.codewars.com/kata/simple-fun-number-352-reagent-formula/javascript
-```
+
+```javascript
 function isValid(formula){
   const firstRule = !(formula.includes(1) && formula.includes(2));
   const secondRule = !(formula.includes(3) && formula.includes(4));
@@ -115,7 +116,7 @@ function isValid(formula){
 ```
 //5. Bingo Card 6 level
 * https://www.codewars.com/kata/bingo-card/javascript
-```
+```javascript
 function genRange(array, letter, start, end, count) {
   let arr = [];
   for(let i = 0; i < count; ) {
@@ -145,7 +146,7 @@ function getCard()
 
 //7.Check three and two 7 level
 * https://www.codewars.com/kata/check-three-and-two/javascript
-```
+```javascript
 function checkThreeAndTwo(array) {
   let a = array.filter(x =>x === 'a').length;
   let b = array.filter(x =>x === 'b').length;
@@ -157,7 +158,8 @@ function checkThreeAndTwo(array) {
 ```
 //8. The Supermarket Queue 6 level
 * https://www.codewars.com/kata/the-supermarket-queue/javascript
-```
+
+```javascript
 function queueTime(line, registers) {
   let queArr = [];
   for(let i = 0; i < registers; i++) {
@@ -173,7 +175,8 @@ function queueTime(line, registers) {
 
 //9. Simple parenthesis removal
 * https://www.codewars.com/kata/simple-parenthesis-removal/javascript
-```
+
+```javascript
 function solve(s) {
  let g = [], l = 1, a = '';
  for (let c of s) {
@@ -192,8 +195,7 @@ function solve(s) {
 //10.Smallest Difference 6 level
 * https://www.codewars.com/kata/smallest-difference/javascript
 
-```
-//My solution:
+```javascript
 
 function smallestDiff(arr1, arr2) {
 console.log(arr1,arr2);

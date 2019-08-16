@@ -13,11 +13,11 @@ const reverseList = list =>  list.reverse();
 ```javascript
 
 const find_average = array => array.reduce((x,y)=>x+y)/array.length;
-````
+```
 //3.Initialize my name 7level
 * https://www.codewars.com/kata/5768a693a3205e1cc100071f
-```javascript
 
+```javascript
 function initializeNames(name){
 nameArr=name.split(' ');
 if(nameArr<3){return name;}
@@ -30,12 +30,14 @@ return nameArr.join(' ');
 
 //4. You only need one- Begginer
 * https://www.codewars.com/kata/57cc975ed542d3148f00015b
+
 ```javascript
 
 const check = (a,x) => a.includes(x);
 ```
 //5.Sum ALL the arrays! 7 level
 * https://www.codewars.com/kata/sum-all-the-arrays/javascript
+
 ```javascript
 
 function arraySum(arr) {
@@ -80,9 +82,9 @@ const avg = (a) => a.reduce((x, y) => x + y) / a.length
 ```
 
 //11.Sort the odd 6 level
-````
 * https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
-````
+
+```javascript
 let sortArray = function(arr) {
   let idx = arr.map((a, i) => a%2===1 ? i : '').filter(a => a !== '');
   let odds = arr.filter(a => a % 2 === 1).sort((a,b) => a - b);
@@ -91,23 +93,20 @@ let sortArray = function(arr) {
   }
   return arr;
 }
-
+```
 //12. Array Array Array 7 level
-````
 * https://www.codewars.com/kata/array-array-array/javascript
-````
-//My solution:
+
+```javascript
 let explode = x => {
   let n = x.filter(a => !isNaN(a)).reduce((b, n) => b + n, 0);
   return n ? Array(n).fill(x) : 'Void!';
 }
-
+```
 //13.Create Four Letter Birding Codes from Bird Names 6 level
-````
-* https://www.codewars.com/kata/create-four-letter-birding-codes-from-bird-names/javascript
-````
-//My solution:
 
+* https://www.codewars.com/kata/create-four-letter-birding-codes-from-bird-names/javascript
+```javascript
 function birdCode(arr){
 let fourLetterCode = [];
 let subArray = [];
@@ -123,21 +122,21 @@ switch(subArray.length){
 }
 return fourLetterCode;
 }
+```
 
 //14.String Reordering 7 level
-````
 * https://www.codewars.com/kata/string-reordering/javascript
-````
-//My solution:
+
+```javascript
 function sentence(a) {
   return a.sort((a,b)=>Object.keys(a)-Object.keys(b)).map(x=>x[+Object.keys(x)]).join` `;
 }
+```
 
 //15.Arrays Similar 6level
-````
+
 * https://www.codewars.com/kata/51e704f2d8dbace389000279
-````
-//My solution 1:
+```javascript
 function arraysSimilar(arr1, arr2) {
   arr1 = arr1.sort(sortFunc);
   arr2 = arr2.sort(sortFunc);
@@ -145,16 +144,17 @@ function arraysSimilar(arr1, arr2) {
 }
 
 function sortFunc(a,b) {return a-b;}
-
+```
 //My solution 2:
+```javascript
 function arraysSimilar(arr1, arr2) {
 return JSON.stringify(arr1.sort())===JSON.stringify(arr2.sort());
 }
-
+```
 //16. A gift well spent 7level
-````
 * https://www.codewars.com/kata/54554846126a002d5b000854
-````
+
+```javascript
 //My solution:
 let buy = function(x, arr){
   for (let i = 0; i < arr.length; i++) {
@@ -167,56 +167,55 @@ let buy = function(x, arr){
 
   return null;
 };
+```
 
 //17. Maximum Triplet Sum (Array Series #7) 7level
-````
 * https://www.codewars.com/kata/5aa1bcda373c2eb596000112
-````
+
+```javascript
 //My solution:
 function maxTriSum(numbers){
  let set = new Set(numbers);
   set = [...set].sort((a, b) => b - a);
   return set[0] + set[1] + set[2];
 }
+```
 
 //18. Where my anagrams at? 5level
-````
 * https://www.codewars.com/kata/where-my-anagrams-at/javascript
-````
-//My solution:
+```javascript
 
 function anagrams(word, words) {
   word = word.split('').sort().join('');
   return words.filter(function(v) {return word == v.split('').sort().join('');});
 }
+```
 
 //19.Abbreviate a Two Word Name 8level
-````
 * https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3
-````
-//My solution:
+
+```javascript
 function abbrevName(name){
 return name[0].toUpperCase()+'.'+ name.charAt(name.indexOf(' ')+1).toUpperCase();
 }
+```
 
 //20. A needle in the Haystack 8level
-````
 * https://www.codewars.com/kata/a-needle-in-the-haystack/javascript
-````
-//My solution:
+```javascript
 function findNeedle(haystack) {
   return "found the needle at position "+haystack.indexOf('needle');
 }
+```
 
 //21.Sort and star 8level
-````
 * https://www.codewars.com/kata/sort-and-star/javascript
-````
-//My solution:
+```javascript
 
 function twoSort(s) {
   return s.sort()[0].split('').join('***');
 }
+```
 
 //22. Are the numbers in order? 7 level
 * https://www.codewars.com/kata/are-the-numbers-in-order/javascript
@@ -252,14 +251,14 @@ const getAverage =(marks) => Math.floor(marks.reduce((sum, x) => sum + x) / mark
 
 //25. Remove duplicate words 7level
 * https://www.codewars.com/kata/5b39e3772ae7545f650000fc
-```
+```javascript
 function removeDuplicateWords (s) {
     return [...new Set(s.split(' '))].join(' ');
 }
 ```
 //26. How good are you really? 8level
 * https://www.codewars.com/kata/5601409514fc93442500010b
-```
+```javascript
 function betterThanAverage(classPoints, yourPoints) {
   let result=(classPoints.reduce((a,b)=>a+b,0)+yourPoints)/(classPoints.length+1);
   return result < yourPoints;
@@ -267,7 +266,7 @@ function betterThanAverage(classPoints, yourPoints) {
 ```
 //27. Convert number to reversed array of digits 8level
 * https://www.codewars.com/kata/5583090cbe83f4fd8c000051
-```
+```javascript
 function digitize(n) {
 return n.toString().split('').reverse().map(Number);
 
@@ -275,12 +274,13 @@ return n.toString().split('').reverse().map(Number);
 ```
 //28. Merge two sorted arrays into one 8level
 * https://www.codewars.com/kata/5899642f6e1b25935d000161
-```
+```javascript
 function mergeArrays(arr1, arr2) {
 return [...new Set(arr1.sort().concat(arr2.sort()).sort(function compareNumbers(a, b) {
       return a - b;
     }))];
  }
+ ```
 
 
 
